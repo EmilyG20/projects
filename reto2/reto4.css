@@ -1,0 +1,125 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+}
+.container_gral {
+  
+  width: 350px;
+  height: 600px;
+  background-color: hsl(216, 50%, 16%);
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.container_img {
+  width: 298px;
+  height: 298px;
+  position: relative;
+  /* text-align: center; */
+  margin: 26px;
+  border-radius: 10px;
+}
+.container_img .img_equilib{
+  position: absolute;
+}
+.container_img .img_equilib img{
+   width: 298px;
+   border-radius: 10px;
+}
+.container_img .img_eye{
+  width: 298px;
+  height: 298px;
+  display: none;
+}
+.container_img .img_eye img{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
+ }
+ .container_img .img_equilib:hover{
+  opacity: 0.4;
+ }
+ .container_img .img_equilib:hover + .img_eye{
+  display: block;
+ }
+ .container_gral .container_img:hover{
+  /* opacity: 0.3; */
+  background-color: cyan;
+  cursor: pointer;
+}
+.container_info {
+  width: 85%;
+  margin: 26px;
+  margin-bottom: 20px;
+}
+.container_info .title{
+  color: hsl(0, 0%, 100%,0.9);
+  font-size: 22px;
+  font-weight: 500;
+}
+.container_info .title:hover{
+  color: cyan;
+  cursor: pointer;
+}
+.container_info .paragraph{
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+}
+.container_info .value{
+  color: cyan;
+  font-weight: 400;
+  display: flex;
+}
+.container_info span::before{
+  content: "\2000";
+}
+.container_info .time{
+  color: hsl(215, 51%, 70%);
+  display: flex;
+}
+.container_info .val_pr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_info hr{
+  background-color: hsl(215, 51%, 70%);
+  margin-top: 20px;
+  height: .1px;
+  border: none;
+}
+.container_creator{
+  margin: 26px;
+  display: flex;
+  align-items: center;
+}
+.container_creator img{
+  width: 40px;
+  border-radius: 28px;
+  border: 2px solid;
+  border-color: white;
+}
+.container_creator .c{
+  color: hsl(215, 51%, 70%);
+}
+.container_creator .c::before{
+  content: "\2001";
+}
+.container_creator .cname{
+  color: white;
+}
+.container_creator .cname::before{
+  content: "\00a0";
+}
+.container_creator .cname:hover{
+  color: cyan;
+  cursor: pointer;
+}

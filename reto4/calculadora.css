@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.theme-blue {
+  /* Esto contiene un valor pero en este caso es un color */
+  --color-primary: hsl(222, 26%, 31%);
+  --secondary-color: hsl(223, 31%, 20%);
+  --extra-color: hsl(224, 36%, 15%);
+  --bg-number-buttons: hsl(30, 25%, 89%);
+  --bg-text-buttons: hsl(221, 14%, 31%);
+  --color-text-buttons: hsl(222, 26%, 31%);
+  --color-hover-btn:white;
+  --text-big-color: #fff;
+  --bg-del: hsl(225, 21%, 49%);
+  --bg-equal: hsl(6, 63%, 50%);
+  --color-btn-eq:white;
+  --btn-shadow: hsl(28, 16%, 65%);
+  --btn-shadow-del:hsl(224, 28%, 35%);
+  --btn-shadow-eq: hsl(6, 63%, 50%);
+  --color-hover-eq:#F96C5B;
+  --color-hover-blue:#A1B3E2;
+}
+
+.theme-white {
+  --color-primary: #E6E6E6;
+  --secondary-color: hsl(0, 0%, 93%);
+  --extra-color: hsl(0, 5%, 81%);
+  --bg-number-buttons: hsl(45, 7%, 89%);
+  --bg-text-buttons: hsl(221, 14%, 31%);
+  --color-text-buttons: hsl(60, 10%, 19%);
+  --color-hover-btn:white;
+  --text-big-color: hsl(60, 10%, 19%);
+  --bg-del: hsl(185, 42%, 37%);
+  --bg-equal: hsl(25, 98%, 40%);
+  --color-btn-eq: white;
+  --btn-shadow: hsl(35, 11%, 61%);
+  --btn-shadow-del:hsl(185, 58%, 25%);
+  --btn-shadow-eq:hsl(25, 99%, 27%);
+  --color-hover-eq:#FF8B38;
+  --color-hover-blue:#60B6BD;
+}
+
+.theme-purple {
+  --color-primary: hsl(268, 75%, 9%);
+  --secondary-color: hsl(268, 71%, 12%);
+  --extra-color: hsl(268, 71%, 12%);
+  --bg-number-buttons: hsl(268, 47%, 21%);
+  --bg-text-buttons: hsl(221, 14%, 31%);
+  --text-big-color: hsl(52, 100%, 62%);
+  --color-text-buttons: hsl(52, 100%, 62%);
+  --color-hover-btn:#6B34AC;
+  --bg-del: hsl(281, 89%, 26%);
+  --bg-equal: hsl(176, 100%, 44%);
+  --color-btn-eq: hsl(268, 71%, 12%);
+  --btn-shadow: hsl(290, 70%, 36%);
+  --btn-shadow-del:hsl(285, 91%, 52%);
+  --btn-shadow-eq: hsl(177, 92%, 70%);
+  --color-hover-eq:#94FFF9;
+  --color-hover-blue:#8333AC;
+}
+
+body {
+  background-color: var(--color-primary);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'League Spartan', sans-serif;
+}
+section {
+  width: 450px;
+}
+.one-two-three {
+  border: none;
+  display: flex;
+  margin-left: 400px;
+  width: 42px;
+  justify-content: space-between;
+  color: var(--text-big-color);
+}
+.section-title-theme {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.text-white {
+  color: var(--text-big-color);
+}
+.section-theme  {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-inputs {
+  background-color: var(--extra-color);
+  padding: 2px;
+  border-radius: 20px;
+  width: 57px;
+}
+input[type="radio"]::after {
+  content:"";
+  border: 2px solid var(--extra-color);
+  width: 15px;
+  height: 15px;
+  top: -2px;
+  left: -1px;
+  background-color: var(--extra-color);
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  visibility: visible;
+  cursor: pointer;
+}
+input[type="radio"]:checked:after {
+  content:"";
+  border: 2px solid var(--extra-color);
+  width: 15px;
+  height: 15px;
+  top: -2px;
+  left: -1px;
+  background-color: var(--bg-equal);
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  visibility: visible;
+  cursor: pointer;
+}
+.section-result {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--secondary-color);
+  height: 100px;
+}
+.section-result h1 {
+  font-size: 3.2em;
+  margin-top: 10px;
+  color: var(--text-big-color);
+  text-align: right;
+}
+.section-buttons {
+  background-color: var(--extra-color);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+}
+.section-buttons div {
+  display: flex;
+  justify-content: space-between;
+}
+.section-buttons div button {
+  background-color: var(--bg-number-buttons);
+  color: var(--color-text-buttons);
+  width: 90px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px var(--btn-shadow);
+}
+.btn-equal {
+  background-color: var(--bg-equal) !important;
+  color: var(--color-btn-eq) !important;
+  box-shadow: 0 3px var(--btn-shadow-eq) !important;
+}
+
+.btn-blue {
+  background-color: var(--bg-del) !important;
+  color: #fff !important;
+  box-shadow: 0 3px var(--btn-shadow-del) !important;
+}
+
+.section-buttons div button:hover {
+  background-color: var(--color-hover-btn);
+}
+
+.btn-big {
+  width: 200px !important;
+}
+.btn-equal:hover {
+  background-color: var(--color-hover-eq) !important;
+}
+.btn-blue:hover {
+  background-color: var(--color-hover-blue) !important;
+}
